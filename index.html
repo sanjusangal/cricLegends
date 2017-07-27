@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>registration</title>
+	<!--	<link rel="stylesheet" href="registrationcss.css"> -->
+</head>
+<style>
+	body {
+		background-image: url(baseball-wallpaper-10.jpg);
+	}
+	
+	h1 {
+		text-align: center;
+		font-family: cursive;
+		font-size: 40px;
+	}
+	
+	h2 {
+		text-align: center;
+	}
+	
+	.label {
+		float: left;
+		width: 30%;
+	}
+	
+	.common {
+		margin: 0px auto;
+		width: 400px;
+		/*	so the size remains same when size if device is shortened*/
+		padding-bottom: 10px;
+		/*	border: 1px solid red;*/
+	}
+	
+	.textbox {
+		/*	width: 50%;*/
+		float: left;
+		/*	without float left will also work perfectly for small screen size but if width is increased then prob*/
+	}
+	
+	.clearfix:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.register {
+		margin-left: 10px;
+	}
+	
+	#button1 {
+		background-color: dodgerblue;
+		width: 90px;
+		height: 35px;
+		font-weight: 600;
+	}
+	
+	#button2 {
+		background-color: dodgerblue;
+		width: 90px;
+		height: 35px;
+		font-weight: 600;
+	}
+	
+	#button3 {
+		background-color: dodgerblue;
+		width: 150px;
+		height: 35px;
+		font-weight: 600;
+	}
+	
+	.abc {
+		height: 30px;
+		width: 400px;
+	}
+</style>
+<script src="registration.js"></script>
+
+<body>
+	<h1>WELCOME TO THE CRICKETBUZZ</h1>
+	<h2>LOGIN</h2>
+	<form>
+		<div class="container">
+			<div class="common clearfix">
+				<div class="label">
+					<label for="username"> USERNAME:</label>
+				</div>
+				<div class="textbox">
+					<input type="text" placeholder="enter your name" required class="abc" id="userid"> </div>
+			</div>
+			<div class="common clearfix">
+				<div class="label">
+					<label for="email">E-MAIL:</label>
+				</div>
+				<div class="textbox">
+					<input type="text" placeholder="enter your email" required class="abc" id="usermail"> </div>
+			</div>
+			<div class="common clearfix">
+				<div class="label">
+					<label for="password">PASSWORD</label>
+				</div>
+				<div class="textbox">
+					<input type="password" placeholder="enter your password" required class="abc" id="pass"> </div>
+			</div>
+			<div class="common clearfix">
+				<div class="label">
+					<input type="reset" value="Cancel" class="cancel" id="button1"> </div>
+				<div class="textbox">
+					<input type="button" value="login" class="" onclick="login()" id="button2"> </div>
+				<div class="register">
+					<input type="button" value="Register yourself?" id="button3"> </div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>
